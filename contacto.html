@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="fondo">
+    <header class="header">
+        <div class="navegacion">
+            <img src="img/nikepipa.png" alt="icono de nike" class="logo">
+            <h1>Tienda Nike</h1>
+            <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Home</a>
+            </li>
+            <li>
+                <a href="galeria.html"> Galeria</a>
+            </li>
+            <li>
+                <a href="contacto.html"> Contacto</a>
+            </li>
+            <li>
+                <a href="shop.html"> Shop</a>
+            </li>
+            <li>
+                <a href="ubicacion.html"> Ubicacion</a>
+            </li>
+        </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+    <h2>CONTACTOS</h2>
+    <p  class="texto"> Acá te vas a poder contactar con nosotros! </p>
+    <form action="enviar.js" method="enctype">
+        <label for="nombre"> Nombre:</label>
+        <input type="text" id="nombre" name="Nombre" placeholder="Franco" class="formulario" required>
+        <br>
+        <label for="apellido"> Apellido:</label>
+        <input type="text" id="apellido" name="Apellido" placeholder="Mendez" class="formulario" required>
+        <br>
+        <label for="Email"> Email</label>
+        <input type="text" id="Email" name="email" placeholder=" franco123@gamil.com" class="formulario" required>
+        <br>
+        <label for="Contraseña"> contraseña</label>
+        <input type="password" id="Contraseña" name="contraseña" placeholder="contraseña123" class="formulario" required>
+        <br>
+        <label for="Opinion"> Opinion</label>
+        <textarea placeholder="Opinion de la pagina" class="formulario" ></textarea>
+        <input type="submit" value="enviar">
+        <br>
+        <p class="genero">Hombre o Mujer</p>
+        <label for="Hombre"> hombre</label>
+        <input type="radio" id="Hombre" name="hombre">
+        <label for="Mujer"> mujer</label>
+        <input type="radio" id="Mujer" name="mujer">
+        <br>
+        <p class="edad">Edad</p>
+        <select name id size="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">1<7/option>
+            <option value="18">18</option>
+        </select>
+    </form>
+    </main>
+    <footer>
+    <!--Redes Sociales-->
+    <h2> Redes sociales</h2>
+    <div class="redes">
+    <a href="Instagram" class="redes__enlaces"> Instagram</a>
+    <a href="Facebook" class="redes__enlaces"> Facebook</a>
+    <a href="Twitter" class="redes__enlaces"> Twitter</a>
+    </div>
+    </footer>
+</body>
+</html>
