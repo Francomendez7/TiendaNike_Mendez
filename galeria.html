@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>galeria</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body class="fondo">
     <header class="header">
         <div class="navegacion">
-            <img src="img/nikepipa.png" alt="icono de nike" class="logo">
+            <img src="img/nikepipa.png" alt="icono de nike" class="logo" class="img-fluid">
         <h1>Tienda Nike</h1>
         <nav>
         <ul>
@@ -33,15 +34,30 @@
         </div>
         </nav>
     </header>
-    <main class="grid">
-    <h2 class="grid__titulo">GALERIA DE NIKE</h2>
-    <!-- <p class="texto"> Acá vas a poder encontrar fotos de las zapatillas que tendremos!</p> -->
-    <img class="zapatillas grid__foto1" src="img/nike jordan.jpg" alt="nike air jordan 1" width="350px">
-    <br>
-    <img class="zapatillas grid__foto2" src="img/nike-air-jordan-1-verdeagua.jpg" alt="nike air jordan 1 verde agua" width="250px">
-    <br>
-    <img class="zapatillas grid__foto3" src="img/air-jordan-1_retro.jpg" alt="nike air jordan 1 retro" width="250px">
-    </main>
+    
+    <h2>GALERIA DE NIKE</h2>
+    <div class="container-fluid bg-light">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/nike jordan.jpg" class="d-block w-100" alt="zapatillas nike air jordan 1">
+        </div>
+        <div class="carousel-item">
+            <img src="img/nike-air-jordan-1-verdeagua.jpg" class="d-block w-100" alt="zapatillas nike jordan 1 nike-air-jordan-1-verdeagua">
+        </div>
+        <div class="carousel-item">
+            <img src="img/air-jordan-1_retro.jpg" class="d-block w-100" alt="zapatillas nike-air-jordan-1-retro">
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
     <footer>
     <!--Redes Sociales-->
     <h2> Redes sociales</h2>
@@ -51,5 +67,6 @@
     <a href="Twitter" class="redes__enlaces"> Twitter</a>
     </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
