@@ -12,7 +12,7 @@ animation: imagenmove 6s infinite linear;
 position: absolute;
 }
 @keyframes imagenmove {
-    from {background-position: 0;}
+    from {background-position: 0px;}
     to{background-position: 720px;}
     }
 
