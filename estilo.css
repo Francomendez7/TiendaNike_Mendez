@@ -1,273 +1,139 @@
-body{
-color: black;
-min-height: 100vh;
-display: grid;
-grid-template-rows:auto 1fr auto;
-
-
-}
-.fondo{
-background-image: url(./img/fondocajanike.jpg); 
-animation: imagenmove 6s infinite linear;
-position: absolute;
-}
-@keyframes imagenmove {
-    from {background-position: 0px;}
-    to{background-position: 720px;}
-    }
-
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
-.header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-    width: 1350px; 
-}
+
 .logo{
-    background-color: white;
+    background-color: transparent;
 }
-h1{
-    margin-right: 500px;
-    display: inline-block;
+
+body{
+    /* background-color: aqua; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 50px;
+}
+
+.fondo{
+    background-image: url(./img/fondocajanike.jpg);
+    animation: imagemove 6s infinite linear;
+    position: absolute;
+}
+
+@keyframes imagemove {
+    from {background-position: 0;}
+    to{background-position: 720px;}
+}
+
+#divisor{
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+    /* border: black solid 1px; */
+}
+
+.header{
+    /* background: red; */
+    height: 100px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 100px;
     color: white;
+    padding-top: 10px;
 }
-h2{
-    text-decoration: underline 2px;
-    text-align: center;
-}
-.texto{
-    text-align: center;
-}
-main div:hover{
-    margin-top: 10px;
-    transition: all 5s;
-    /* width: 50px; */
-    /* height: 50px; */
-}
+
 .navegacion{
     display: flex;
+    background: transparent;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    width: 100%; 
+    font-family: monospace;
 }
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 25px;
+}
+
 div nav ul{
     list-style-type: none;
 }
-div nav ul li{
-    display: inline-block;
-    margin: 0 10px;
-}
+
 div nav ul li a{
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
     padding: 10px 10px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 50px;
 }
 
-span {
-    display: none;
+.clearfix{
+    clear:both
 }
 
-.zapatillas{
-    padding: 0px;
-    border: black solid 5px;
-    border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 35%;
-
+h1{
+    color: black;
+    font-family: fantasy;
+    border: 5px solid black;
 }
+
 .video{
-    border: black solid 10px;
-    border-radius: 15px;
-    margin-left: 200px;
-}
-.mapa{
     border: black solid 20px;
-    border-radius: 10px;
-    margin-left: 350px;
+    border-radius: 15px;
+    margin-top: 50px;
 }
-.tabla{
-    border: black solid 1px;
-    margin-left: 610px;
-}
+
 .formulario{
-    border: black solid 3px;
+    border: black solid 5px;
     margin-top: 5%;
     padding: 1%;
 }
-.edad{
-    margin-top: 5%;
-    padding: 1%;
-    font-size: 20px;
-    text-decoration: underline;
-}
+
 .genero{
     margin-top: 5%;
-    padding: 1%;
-    font-size: 20px;
-    text-decoration: underline;
 }
+
+.mapa{
+    display: flexbox;
+    border-radius: 10px;
+    align-self: center;
+}
+
 footer{
-    background-color: black;
-    text-align: center;
-    margin-top: auto;
-    }
-.redes{
     display: flex;
+    background-color: transparent;
+    color:white;
+    text-align: center;
+    height: 25px;
+    line-height: 50px;
+    width: 100%;
+    margin-top: 187px;
+}
+
+.redes{
+    flex: auto;
     justify-content: space-evenly;
     align-items: center;
-    height: 60px;
+    height: 25px;
     padding-top: 20px;
+    width: 100%;
 }
-.redes__enlaces{
+
+.redes_sociales{
+    flex: auto;
+    align-items: center;
     text-decoration: none;
     font-size: 25px;
+    font-family:monospace;
     font-weight: bold;
     padding: 10px 10px;
-    background-color: white;
+    background-color: transparent;
     color: black;
-    border-radius: 50px;
-}
-/* galeria */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-}
-.grid__titulo{
-    grid-area: 1/2/2/3;
-}
-.grid__foto1{
-    grid-area:1/1/2/2 ;
-    transform: translate(10px,60px);
-    /* justify-self: center; */
-}
-.grid__foto2{
-    grid-area: 1/2/2/3;
-    transform: translate(60px,50px);
-}
-.grid__foto3{
-    grid-area:1/3/3/4 ;
-    transform: translate(10px,50px);
-}
-/* fin de galeria */
-
-/* principio de home */
-.conteiner{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:1fr;
-}
-.conteiner__titulo{
-    grid-area:1/1/2/2 ;
-}
-.conteiner__video{
-    grid-area: 2/1/3/2;
-}
-/* fin de home */
-
-@media screen and (max-width: 780px) {
-    body{
-        font-size: 80%;
-    }
-    .fondo{background-image: url(./img/fondozapas.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    animation: none;
-    }
-    div nav {
-        display: none;
-        flex-direction: column;
-    }
-    span {
-        display: inline-block;
-    }
-    .video {
-        margin-left: 0;
-        width: 450px;
-    }
-    h2 {
-        text-align: left;
-    }
-
-    .grid__foto1{
-        width: 220px;
-        /* transition: width 5s height 5s ; */
-    }
-
-    .grid__foto2{
-        width: 150px; 
-        /* transition: width 5s height 5s ; */
-    }
-
-    .grid__foto3{
-        width: 150px;
-        /* transition: width 5s height 5s; */
-        }
-
-    footer{
-        background-color: black;
-        text-align: center;
-        margin-top: auto;
-        width:auto
-        }
-
-@media screen and (max-width: 375px) {
-}body{
-    font-size: 80%;
-}
-.fondo{background-image: linear-gradient(to bottom, lightblue, red)
-}
-.header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: black;
-    width: 50%; 
-}
-.navegacion{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%; 
-}
-div nav {
-    display: none;
-    flex-direction: column;
-}
-span {
-    display: inline-block;
-}
-.video {
-    margin-left: 0;
-    width: 350px;
-}
-h2 {
-    text-align: left;
-}
-
-.grid__foto1{
-    width: 220px;
-}
-
-.grid__foto2{
-    width: 150px;
-}
-
-.grid__foto3{
-    width: 150px;
-    }
-
-    footer{
-        background-color: black;
-        text-align: center;
-        margin-bottom: auto;
-        width:50%
-        }
 }
