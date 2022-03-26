@@ -8,7 +8,7 @@
 }
 
 body{
-    /* background-color: aqua; */
+    background-color: lightsalmon;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     height: 50px;
@@ -117,6 +117,7 @@ $estilo: (
     border: black solid 5px;
     margin-top: 5%;
     padding: 1%;
+    font-size: 15px;
 }
 
 .genero{
@@ -126,16 +127,16 @@ $estilo: (
 .mapa{
     display: flexbox;
     border-radius: 10px;
-    align-self: center;
+    width: 100%;
 }
 
 @mixin imagen($heigth, $width) {
     height: $heigth;
     width: $width;
 }
-.box{
+/* .box{
     @include imagen(500px,500px );
-}
+} */
 
 footer{
     display: flex;
